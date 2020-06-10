@@ -24,7 +24,7 @@ do_action( 'hestia_before_single_post_wrapper' );
 	</div>
 </div>
 <section>
-	<?php include 'stel_udregner.html';?>
+	<?php include 'stel_udregner.php';?>
 </section>
 <?php
 if ( ! is_singular( 'elementor_library' ) ) {
