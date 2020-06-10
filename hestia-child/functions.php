@@ -16,4 +16,13 @@
     );
   }
 
+  function wpb_add_google_fonts() {
+
+    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Signika:wght@300&display=swap', false ); 
+    }
+    
+    add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
  ?>
+
+
