@@ -32,7 +32,7 @@ get_header();
 <!--mail til funktion-->
 <section class="tilmelding">
 
-<h4>Tilmeld mig!</h4>
+<h3>Tilmeld mig!</h3>
 <p>Ved tilmelding skal du oplyse navn, alder, mobil nr, og eventuelt hvilken stel størrelse du kan bruge. Hvis du ikke ved hvad stel størrelse du skal have, kan du tage vores udregning på vores side!</p>
 <form action="mailto:anne.meh@hotmail.com?subject=Tilmelding&body=Navn%3A%20%0AAlder%3A%20%0AMobil%20nummer%3A%20%0AStelst%C3%B8rrelse%3A%20%0A" method="post" enctype="text/plain">
 <input type="submit" value="Tilmeld">

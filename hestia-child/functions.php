@@ -1,13 +1,14 @@
-<?php
+<!-- Henter temaet til Hestia child -->
 
+<?php
   add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
   function my_theme_enqueue_styles() {
     $parenthandle = 'parent-style';
     $theme = wp_get_theme();
-    wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css',
+    wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', /*linker vores stylesheet style.css*/
       array(),
-      $theme -> parent()-> get('Version')
+      $theme -> parent()-> get('Version') /*Information fra style.css bliver importeret */
     );
 
     wp_enqueue_style( 'child-style', get_stylesheet_uri(),
@@ -15,6 +16,8 @@
         $theme->get('Version')
     );
   }
+
+/*Google fonts */
 
   function wpb_add_google_fonts() {
 

@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styletilmelding.css">
   </head>
   <body onload="beregnerform.reset();">
 
+<!--udfyldning af beregninger-->
+<section class="beregning">
+	
     <form id="beregnerform">
       <input id="skridtlaengde">
       <button type="button" onclick="showsize()" id="knap">Find min størrelse</button>
-    </form>
+	</form>
+	
+</section>
+
+	<!--Resultat af beregningen der er blevet indtastet-->
 
     <output name="result" id="stelstorrelse_output"></output>
+
+	<!--SVG kode til cykel og lineal-->
 
 <svg version="1.1" id="bike_x5F_measure" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="0 0 1380.04 1067.8" style="enable-background:new 0 0 1380.04 1067.8;" xml:space="preserve">
@@ -205,6 +215,8 @@
 <polygon id="indicator" class="st3" points="1310.21,1027.49 1380.04,1067.8 1380.04,987.17 "/>
 </svg>
   </body>
+
+<!--Scriptet til vores udregner--> 
 
    <script>
    
