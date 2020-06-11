@@ -1,10 +1,8 @@
 <?php
-/**
- * Template Name: Tilmelding
- */
-get_header();
 
+get_header();
 ?>
+
 <!--title-->
   <h1><?php the_title(); ?></h1>
 
