@@ -2,13 +2,13 @@
 <html>
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styletilmelding.css">
+	<link rel="stylesheet" href="styletilmelding.css"> <!--stylesheet-->
   </head>
   <body onload="beregnerform.reset();">
 
 <!--udfyldning af beregninger-->
 <section class="beregning">
-	
+
     <form id="beregnerform">
       <input id="skridtlaengde">
       <button type="button" onclick="showsize()" id="knap">Find min størrelse</button>
@@ -16,7 +16,7 @@
 	
 </section>
 
-	<!--Resultat af beregningen der er blevet indtastet-->
+	<!--Resultat af beregningen der er blevet indtaste-->
 
     <output name="result" id="stelstorrelse_output"></output>
 
@@ -221,10 +221,10 @@
    <script>
    
    function showsize() {
-  var skridtlaengde = document.getElementById("skridtlaengde").value;
-  var stelstorrelse = 0.66 * skridtlaengde;
-  var hojde = stelstorrelse * -12.7604;
-  var placering = "translate(0px, " + hojde + "px)";
+		var skridtlaengde = document.getElementById("skridtlaengde").value;
+		var stelstorrelse = 0.66 * skridtlaengde;
+		var hojde = stelstorrelse * -12.7604;
+		var placering = "translate(0px, " + hojde + "px)";
   
   document.getElementById("indicator").style.transform = placering;
   document.getElementById("stelstorrelse_output").innerHTML = "Din stelstørelse er " + Math.round(stelstorrelse) + " cm";
