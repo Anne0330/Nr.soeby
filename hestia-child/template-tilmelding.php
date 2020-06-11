@@ -24,7 +24,7 @@ get_header();
 <div class="stelbaggrund">
 <section class="steludregner">
       <h2>Mangler du en cykel?</h2>
-      <p>Ved brug af vores steludregner, kan vi hjælpe dig med at finde en cykel der passer dig. Ved at måle dit skridtlængde i cm, kan du skrive dem ind i boksen nedenfor.</p>
+      <p>Ved brug af vores steludregner, kan vi hjælpe dig med at finde en cykel der passer dig. Det gør man ved at måle dit skridtlængde og skriver det ind i boksen.</p>
 
       <!-- inkluder udregneren-->
 	<?php include 'stel_udregner.php'; ?>
