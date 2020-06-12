@@ -1,23 +1,33 @@
-/* design af tilmeldings siden*/
+.textbokse {
+  display: grid; 
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-areas: 
+  ". kontingent regler ."
+  ;
+}
 
+.regler {
+  grid-area: regler; 
+  
+}
 
-.stelbaggrund {
-    background-color: white;
-    margin-left: 5em;
-    margin-right: 5em;
-    padding-top: 2em;
-    margin-top: -2em;
-    box-shadow: 0px 45px 30px #2d2d2d;
-  }
+.kontingent {
+  grid-area: kontingent; 
+}
 
-  .steludregner {
+ 
+ .steludregner {
     width: 50%;
     margin-left: auto; 
     margin-right: auto; 
+    padding-top: 2em;
   }
 
-  .steludregner p {
+  .steludregner p{
+    margin-right: 5em;
     text-align: center;
+
+
   }
 
   h1 {
@@ -46,13 +56,11 @@
     box-shadow: 0px 30px 30px #2d2d2d;
   }
 
-  .container-entry-content h4 {
-    padding-left: 4em;
-  }
+  
 
   .container-entry-content p {
     padding-left: 5.4em;
-    margin-top: -2em;
+    margin-top: -0.5em;
   }
 
   .tilmelding {
@@ -71,28 +79,51 @@
     padding-top: 5em;
   }
 
-  p {
-      font-size: 20px;
+  .container-entry-content p {
+      font-size: 18px;
+      color: #4B4B4B;
   }
 
-  .container-entry-content p {
-      font-size: 20px;
+  h2{
+    font-weight: 600;
   }
 
 
 /*mobil version - MÅL FÅET FRA WORDPRESS TEMA */
-  @media (max-width: 767px) {
+  @media (max-width: 900px) {
+
+
+    .textbokse {
+      display: grid; 
+      grid-template-columns: 2fr ;
+      grid-template-areas: 
+      "kontingent"
+      "regler"; 
+
+    }
+
+    .regler {
+      grid-area: regler; 
+      
+    }
+
+    .kontingent {
+      grid-area: kontingent; 
+    }
+
+    .textbokse p {
+      padding-top: 2em;
+      padding-right: 0.5em;
+    }
+
+    h2{
+      font-weight: 600;
+    }
   
 
     input[type=submit] {
     padding-top: 5em;
     width: 80%;
-  }
-
-  .stelbaggrund {
-    background-color: white;
-    margin-left: 1em;
-    margin-right: 1em;
   }
 
   .container-entry-content {
@@ -101,7 +132,7 @@
     margin-right: 1em;
   }
 
-  h4, p {
+  p {
     text-align: center;
   }
 
@@ -117,14 +148,11 @@
 
 }
 
-.container-entry-content h4 {
-  padding-left: 1em;
-
-}
-
   .steludregner p {
       margin-left: -5em;
       margin-right: -5em;
+      padding-top: 2em;
+      padding-bottom: 2em;
      
   }
 
@@ -137,6 +165,7 @@
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 2em;
   }
 
 #skridtlaengde {
