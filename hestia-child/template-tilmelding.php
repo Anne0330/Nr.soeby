@@ -15,7 +15,7 @@ get_header();
     <section class="regler">
 
         <h2>Regler og udstyr</h2>
-        <p>Vi forventer at rytterne overholde alle færdselsregler, når vi er på tur. Det vil sige at man <strong>skal</strong> have cykelhjelm på.</p>
+        <p>Vi forventer at rytterne overholder alle færdselsregler, når vi er på tur. Det vil sige, at man <strong>skal</strong> have cykelhjelm på.</p>
 
 
     </section>
@@ -24,7 +24,7 @@ get_header();
     <section class="kontingent">
 
         <h2>Kontingent</h2>
-        <p>Det koster 350 kr. pr. år. Betaling foregår gennem klubben, ved at betale kontant eller med mobilepay.</p>
+        <p>Kontingentet for cykelklubben koster 350 kr. pr. år. Betaling foregår gennem klubben, ved at betale kontant eller med mobilepay.</p>
 
     </section>
 
@@ -46,7 +46,7 @@ get_header();
 <section class="tilmelding">
 
   <h2>Tilmelding</h2>
-    <p>Ved tilmelding skal du oplyse navn, alder, mobil nr, og eventuelt hvilken stel størrelse du kan bruge. Hvis du ikke ved hvad stel størrelse du skal have, kan du tage vores udregning på vores side!</p>
+    <p>Ved tilmelding skal du oplyse navn, alder, mobil nr, og evt hvilken stel størrelse du skal bruge. Hvis du ikke ved hvad stel størrelse du skal have, kan du bruge vores udregner her på siden.</p>
 
     <form action="mailto:anne.meh@hotmail.com?subject=Tilmelding&body=Navn%3A%20%0AAlder%3A%20%0AMobil%20nummer%3A%20%0AStelst%C3%B8rrelse%3A%20%0A" method="post" enctype="text/plain">
       <input type="submit" value="Tilmeld">
